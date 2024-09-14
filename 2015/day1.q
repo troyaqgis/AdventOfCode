@@ -1,4 +1,4 @@
-input:first read0`:D:/_edu/q/AdventOfCode/AdventOfCode/2015/day1_input.txt
+input:first read0`:D:/_edu/q/AdventOfCode/AdventOfCode/2015/day1input.txt
 //part 1
 output1:(-/)value count each group input
 //part 2
