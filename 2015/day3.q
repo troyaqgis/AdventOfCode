@@ -30,8 +30,8 @@ Your puzzle answer was 2639.
 \
 
 input:read0`:D:/_edu/q/AdventOfCode/AdventOfCode/2015/day3input.txt;
-start:(0;0);
-dict:("^";"v";">";"<")!((0;1);(0;-1);(1;0);(-1;0));
+start:0 0;
+dict:"^v><"!(0 1;0 -1;1 0;-1 0);
 
 /part 1
 output1:count group (+\) start :/dict input
@@ -43,7 +43,7 @@ santa:group (+\) start :/ enlist S:L[;0];
 roboSanta:group (+\) start :/ enlist RS:L[;1];
 output2:count santa,roboSanta
 /2nd
-f:{group (+\) (0;0) :/ enlist x};
+f:{group (+\) (0 0) :/ enlist x};
 santa:f L[;0];
 roboSanta:f L[;1];
 output2:count santa,roboSanta
