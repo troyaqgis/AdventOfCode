@@ -29,7 +29,7 @@ input:read0`:D:/_edu/q/AdventOfCode/AdventOfCode/2015/day2input.txt
 output:sum {
     l:l,:first l:asc "J"$"x" vs x;
     (first l)+sum 2*l:3#*[l;1_l,1]
-} each input
+ } each input
 
 
 /part 2

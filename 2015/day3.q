@@ -34,7 +34,7 @@ start:0 0;
 dict:"^v><"!(0 1;0 -1;1 0;-1 0);
 
 /part 1
-output1:count group (+\) start :/dict input
+output1:1+count group (+\) start :/dict input;
 
 /part 2
 L:raze 2 cut 'dict input;
