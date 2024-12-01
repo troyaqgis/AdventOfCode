@@ -64,10 +64,21 @@ t:([] id1:asc input[;0]; id2: asc input[;1]);
 
 //part 1
 output1:last sum update dist:abs id2-id1 from t;
-
-
 //part 2
 output2:select cnt:count i by id2 from t where id2 in distinct id1;
 output2:last sum update multi:id2*cnt from output2;
+//results
+show `output1`output2!(output1;output2);
 
-show `output1`output2!(output1;output2)
+//alternative approach
+l1:asc input[;0];
+l2:asc input[;1];
+//part 1
+output1:sum abs l1-l2;
+//part 2
+output2:sum k*a k:distinct l1 inter key count each group l2;
+//results
+show `output1`output2!(output1;output2);
+
+
+
