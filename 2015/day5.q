@@ -53,5 +53,5 @@ f2:{any x=next x};
 /It does not contain the strings ab, cd, pq, or xy, even if they are part of one of the other requirements.
 f3:{not 1=any x like/: ("*ab*";"*cd*";"*pq*";"*xy*")};
 
-output1:sum all each input!{(f1;f2;f3)@\:x} each input;
+output1:sum all each {(f1;f2;f3)@\:x} each input;
 
